@@ -1,109 +1,88 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    height: 100vh;
     background-color: #000;
-    font-family: 'Inter', sans-serif;
     color: #fff;
-    overflow: hidden;
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 80px 20px;
+    overflow-x: hidden;
 }
 
-/* Efeito de Luz que segue o mouse */
-.cursor-glow {
+.bg-glow {
     position: fixed;
+    top: 0; left: 50%;
     width: 600px; height: 600px;
     background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 1;
-    transition: 0.1s;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
-/* Textura de "Cinema" (Ruído) */
-.noise-overlay {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: url('https://grainy-gradients.vercel.app');
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 2;
+.container { max-width: 900px; width: 100%; text-align: center; }
+
+header { margin-bottom: 60px; }
+.brand-tag { font-size: 0.6rem; letter-spacing: 5px; opacity: 0.4; margin-bottom: 20px; }
+h1 { font-size: 4rem; font-weight: 100; letter-spacing: -2px; }
+h1 span { font-weight: 700; color: #fff; }
+.intro { opacity: 0.5; margin-top: 15px; font-size: 0.9rem; }
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 80px;
 }
 
-.content-box {
-    text-align: center;
-    z-index: 10;
-    max-width: 600px;
-}
-
-.branding {
-    font-size: 0.5rem;
-    letter-spacing: 6px;
-    opacity: 0.4;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 6rem;
-    font-weight: 100;
-    letter-spacing: 15px;
-    margin-bottom: 5px;
-    background: linear-gradient(180deg, #fff 0%, #333 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.line-sep {
-    height: 1px;
-    width: 40px;
-    background: #fff;
-    margin: 20px auto;
-    opacity: 0.2;
-}
-
-h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.expert-tag {
-    font-size: 0.7rem;
-    opacity: 0.5;
-    font-style: italic;
-    margin-bottom: 50px;
-}
-
-.btn-main {
-    display: inline-block;
-    padding: 15px 40px;
-    border: 1px solid #fff;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 3px;
+.product-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
     transition: 0.4s;
 }
 
-.btn-main:hover {
-    background: #fff;
-    color: #000;
+.product-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
 }
 
-.btn-secondary {
-    display: block;
-    margin-top: 30px;
-    font-size: 0.6rem;
-    color: rgba(255,255,255,0.3);
+.badge {
+    font-size: 0.5rem;
+    font-weight: 700;
+    color: #00ff88;
+    background: rgba(0, 255, 136, 0.1);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+h3 { font-size: 1.3rem; margin-bottom: 15px; font-weight: 700; }
+p { font-size: 0.85rem; opacity: 0.6; line-height: 1.6; margin-bottom: 25px; }
+
+.price { font-size: 1.4rem; font-weight: 700; }
+.price span { font-size: 0.8rem; opacity: 0.4; }
+
+.total-box { margin-bottom: 40px; }
+.total-box p { font-size: 0.6rem; letter-spacing: 3px; }
+.total-box h2 { font-size: 3rem; color: #fff; }
+
+.btn-contract {
+    display: inline-block;
+    padding: 20px 60px;
+    background: #fff;
+    color: #000;
     text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     transition: 0.3s;
 }
 
-.btn-secondary:hover { color: #fff; }
+.btn-contract:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(255,255,255,0.2); }
+
+.back-link { display: block; margin-top: 30px; font-size: 0.7rem; color: rgba(255,255,255,0.3); text-decoration: none; }
