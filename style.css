@@ -91,23 +91,43 @@ h2 {
     color: #000;
     border-color: #fff;
 }
+/* Adicione isso ao seu arquivo style.css */
 
-.sub-links {
-    margin-top: 25px;
+.luxury-wrapper {
+    position: relative; /* Necessário para o fundo funcionar */
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    z-index: 1;
 }
 
-.sub-links a {
-    font-size: 0.6rem;
-    color: rgba(255,255,255,0.3);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    transition: 0.3s;
+/* O "Símbolo Fantasma" de Fundo */
+.luxury-wrapper::before {
+    content: 'A'; /* Aqui vai a inicial ou podemos usar uma imagem */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35rem; /* Gigante */
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.02); /* Quase invisível (o segredo do luxo) */
+    font-family: 'Inter', sans-serif;
+    z-index: -1; /* Fica atrás de tudo */
+    pointer-events: none;
+    letter-spacing: -20px;
 }
 
-.sub-links a:hover { color: #fff; border-color: #fff; }
-
-@media (max-width: 600px) {
-    h1 { font-size: 2.5rem; }
-    h1 span { font-size: 1.2rem; }
+/* Se você quiser usar a sua IMAGEM de logo em vez da letra 'A': */
+/* 
+.luxury-wrapper::before {
+    content: '';
+    background-image: url('favicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    opacity: 0.03; 
+    z-index: -1;
 }
-
+*/
