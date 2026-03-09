@@ -6,12 +6,12 @@
     <title>ALVES | Infra & Design Studio</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Fontes e Animações de Luxo -->
+    
+    <!-- CORREÇÃO 1: Link das Animações AOS -->
     <link href="https://unpkg.com" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
-    <!-- MOTOR DA MATRIZ DE DADOS -->
     <canvas id="matrix-canvas"></canvas>
     <div class="overlay-dark"></div>
 
@@ -23,7 +23,7 @@
         </header>
 
         <div class="cta-area">
-            <!-- WHATSAPP CONFIGURADO: 41 9813-9600 -->
+            <!-- CORREÇÃO 2: Seu WhatsApp Real 41 9813-9600 -->
             <a href="https://wa.me." class="btn-gold" target="_blank">INICIAR CONSULTORIA</a>
             
             <div class="case-study">
@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <!-- SCRIPTS DE MOVIMENTO E ANIMAÇÃO -->
+    <!-- CORREÇÃO 3: Scripts de Movimento (AOS.js completo) -->
     <script src="https://unpkg.com"></script>
     <script>
         AOS.init();
@@ -42,14 +42,13 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        // Comandos reais de programação para a chuva de dados
         const alphabet = "ALVESINFRA&DESIGN01sudo-systemctl-status-docker-compose-up-ssh-root@vps-n8n-start-npm-run-build-git-commit-ufw-allow-443";
         const fontSize = 16;
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
 
         function drawMatrix() {
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Efeito de rastro
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = "rgba(255, 255, 255, 0.25)"; // Letras brancas nítidas
             ctx.font = fontSize + "px 'Fira Code', monospace";
@@ -66,6 +65,7 @@
     </script>
 </body>
 </html>
+
 
 
     
