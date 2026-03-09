@@ -5,129 +5,101 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #080808; /* Preto quase puro */
+    background-color: #030303;
     font-family: 'Inter', sans-serif;
     color: #fff;
     overflow: hidden;
+    perspective: 2000px;
+}
+
+/* Esfera 3D de Fundo */
+.sphere {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+    filter: blur(40px);
+    animation: pulse 10s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1) translate(-50px, -50px); opacity: 0.3; }
+    to { transform: scale(1.2) translate(50px, 50px); opacity: 0.6; }
+}
+
+.glow {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(255,255,255,0.02) 100%);
+    z-index: 1;
 }
 
 .luxury-wrapper {
+    position: relative;
+    z-index: 10;
     text-align: center;
-    max-width: 800px;
-    width: 90%;
-}
-
-.top-tag {
-    font-size: 0.6rem;
-    letter-spacing: 5px;
-    opacity: 0.4;
-    margin-bottom: 25px;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 40px;
+    box-shadow: 0 50px 100px rgba(0,0,0,0.9);
 }
 
 h1 {
     font-weight: 100;
-    font-size: 4rem;
-    letter-spacing: -2px;
-    line-height: 1;
-    margin-bottom: 10px;
+    font-size: 5rem;
+    letter-spacing: -4px;
+    line-height: 0.9;
+    text-shadow: 0 0 30px rgba(255,255,255,0.1);
 }
 
 h1 span {
     display: block;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 8px;
-    color: rgba(255,255,255,0.2);
-    margin-top: 5px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 12px;
+    color: #fff;
+    margin-top: 15px;
+    opacity: 0.9;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 1.1rem;
-    opacity: 0.6;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    margin-top: 30px;
 }
 
 .team-brand {
-    margin: 60px 0;
-    padding: 30px 0;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    margin: 50px 0;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.label {
-    font-size: 0.5rem;
-    letter-spacing: 4px;
-    opacity: 0.3;
-    margin-bottom: 15px;
-}
-
-.services-row {
-    font-size: 0.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: 0.8;
-}
-
-.sep { margin: 0 15px; opacity: 0.2; }
+.services-row { font-size: 0.75rem; letter-spacing: 2px; opacity: 0.7; }
+.sep { margin: 0 15px; color: #d4af37; }
 
 .btn-gold {
     display: inline-block;
-    padding: 18px 45px;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: #fff;
+    padding: 22px 60px;
+    background: #fff;
+    color: #000;
     text-decoration: none;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    transition: 0.5s;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    border-radius: 100px;
+    transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .btn-gold:hover {
-    background: #fff;
-    color: #000;
-    border-color: #fff;
-}
-/* Adicione isso ao seu arquivo style.css */
-
-.luxury-wrapper {
-    position: relative; /* Necessário para o fundo funcionar */
-    text-align: center;
-    max-width: 800px;
-    width: 90%;
-    z-index: 1;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 20px 40px rgba(255,255,255,0.2);
 }
 
-/* O "Símbolo Fantasma" de Fundo */
-.luxury-wrapper::before {
-    content: 'A'; /* Aqui vai a inicial ou podemos usar uma imagem */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 35rem; /* Gigante */
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.02); /* Quase invisível (o segredo do luxo) */
-    font-family: 'Inter', sans-serif;
-    z-index: -1; /* Fica atrás de tudo */
-    pointer-events: none;
-    letter-spacing: -20px;
-}
-
-/* Se você quiser usar a sua IMAGEM de logo em vez da letra 'A': */
-/* 
-.luxury-wrapper::before {
-    content: '';
-    background-image: url('favicon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 600px;
-    height: 600px;
-    opacity: 0.03; 
-    z-index: -1;
-}
-*/

@@ -6,33 +6,41 @@
     <title>ALVES | Infra & Design Studio</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <!-- Fontes e Animações -->
+    <link href="https://unpkg.com" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
-    <div class="luxury-wrapper">
+    <!-- Elementos 3D de Fundo -->
+    <div class="sphere"></div>
+    <div class="glow"></div>
+
+    <div class="luxury-wrapper" data-aos="zoom-out" data-aos-duration="2000">
         <header>
-            <p class="top-tag">EST. 2026 — EXCLUSIVE SERVICE</p>
-            <h1>ALVES <span>INFRA & DESIGN</span></h1>
-            <h2>UI/UX Designer • Especialista em Infraestrutura</h2>
+            <p class="top-tag" data-aos="fade-down" data-aos-delay="500">EST. 2026 — PREMIER CONSULTANCY</p>
+            <h1 data-aos="fade-up" data-aos-delay="800">ALVES <span>INFRA & DESIGN</span></h1>
+            <h2 data-aos="fade-up" data-aos-delay="1100">UI/UX Designer • Especialista em Infraestrutura</h2>
         </header>
 
-        <section class="team-brand">
-            <p class="label">EQUIPE & TECNOLOGIA DE PONTA</p>
+        <section class="team-brand" data-aos="fade-in" data-aos-delay="1500">
+            <p class="label">EQUIPE & TECNOLOGIA DE ELITE</p>
             <div class="services-row">
-                <span>Design de Elite</span>
+                <span>Design de Luxo</span>
                 <span class="sep">/</span>
                 <span>Engenharia de I.A.</span>
                 <span class="sep">/</span>
-                <span>Blindagem VPS</span>
+                <span>Segurança VPS</span>
             </div>
         </section>
 
-        <div class="cta-luxury">
-            <a href="https://wa.me" class="btn-gold">SOLICITAR CONSULTORIA</a>
-            <div class="sub-links">
-                <a href="https://felipeliz2.github.io">VER PORTFÓLIO DE PROJETOS</a>
-            </div>
+        <div class="cta-luxury" data-aos="fade-up" data-aos-delay="1800">
+            <a href="https://wa.me" class="btn-gold">INICIAR PROJETO EXCLUSIVO</a>
         </div>
     </div>
+
+    <!-- Script de Animação -->
+    <script src="https://unpkg.com"></script>
+    <script> AOS.init(); </script>
 </body>
 </html>
+
