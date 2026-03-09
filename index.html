@@ -3,51 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALVES | Infra & Design Studio</title>
+    <title>ALVES | Studio de Infraestrutura & Design</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
-    <!-- 1. CAMADA DE PARTÍCULAS (O QUE ESTÁ NA SUA FOTO) -->
-    <div id="particles-js"></div>
-    <div class="sphere"></div>
-    <div class="glow"></div>
+    <!-- Camada de Luxo: Luz Dinâmica -->
+    <div class="cursor-glow"></div>
+    <div class="noise-overlay"></div>
 
-    <div class="luxury-wrapper" data-aos="zoom-out" data-aos-duration="2000">
-        <header>
-            <p class="top-tag">EST. 2026 — PREMIER CONSULTANCY</p>
-            <h1>ALVES <span>INFRA & DESIGN</span></h1>
-            <h2>UI/UX Designer • Especialista em Infraestrutura</h2>
-        </header>
+    <main class="main-content" data-aos="zoom-out" data-aos-duration="3000">
+        <div class="content-box">
+            <p class="branding" data-aos="fade-down" data-aos-delay="500">CONSULTORIA DE ELITE — 2026</p>
+            
+            <h1 data-aos="fade-up" data-aos-delay="800">ALVES</h1>
+            <div class="line-sep" data-aos="stretch"></div>
+            <h2 data-aos="fade-up" data-aos-delay="1100">Infraestrutura & Design Studio</h2>
+            
+            <p class="expert-tag" data-aos="fade-in" data-aos-delay="1500">UI/UX Designer • Especialista em Infraestrutura</p>
 
-        <div class="cta-luxury">
-            <a href="https://wa.me" class="btn-gold">INICIAR CONSULTORIA</a>
-            <div class="case-study-area">
-                <a href="https://clinicadrapatriciamartins.com.br" class="case-link" target="_blank">
-                    <span class="line"></span>
-                    <span class="text">VISITAR PROJETO CLÍNICA</span>
-                    <span class="arrow">→</span>
-                </a>
+            <div class="action-section" data-aos="fade-up" data-aos-delay="1800">
+                <a href="https://wa.me" class="btn-main">INICIAR PROJETO</a>
+                <a href="https://clinicadrapatriciamartins.com.br" class="btn-secondary" target="_blank">Case: Clínica Patrícia Martins →</a>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- 2. SCRIPTS DAS PARTÍCULAS E ANIMAÇÃO (O QUE ESTÁ NA SUA FOTO) -->
-    <script src="https://cdn.jsdelivr.net"></script>
     <script src="https://unpkg.com"></script>
     <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 80 },
-                "color": { "value": "#ffffff" },
-                "opacity": { "value": 0.2 },
-                "size": { "value": 2 },
-                "move": { "enable": true, "speed": 0.5 }
-            }
-        });
         AOS.init();
+        const glow = document.querySelector('.cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.pageX + 'px';
+            glow.style.top = e.pageY + 'px';
+        });
     </script>
 </body>
 </html>

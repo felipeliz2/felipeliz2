@@ -1,58 +1,109 @@
-/* --- VISUAL DE ELITE: ALVES INFRA & DESIGN + PARTÍCULAS --- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #030303; /* Fundo Preto de Luxo */
+    background-color: #000;
     font-family: 'Inter', sans-serif;
     color: #fff;
     overflow: hidden;
-    perspective: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Camada das Partículas (Poeira Estelar) */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1; /* Atrás do texto, na frente da esfera */
-    pointer-events: none;
-}
-
-/* Esfera 3D de Fundo */
-.sphere {
-    position: absolute;
+/* Efeito de Luz que segue o mouse */
+.cursor-glow {
+    position: fixed;
     width: 600px; height: 600px;
     background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
     border-radius: 50%;
-    z-index: 0; filter: blur(40px);
-    animation: pulse 10s infinite alternate;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    transition: 0.1s;
 }
 
-@keyframes pulse {
-    from { transform: scale(1) translate(-50px, -50px); opacity: 0.3; }
-    to { transform: scale(1.2) translate(50px, 50px); opacity: 0.6; }
+/* Textura de "Cinema" (Ruído) */
+.noise-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: url('https://grainy-gradients.vercel.app');
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 2;
 }
 
-/* Container de Vidro */
-.luxury-wrapper {
-    position: relative;
-    z-index: 10; /* Sempre na frente das partículas */
+.content-box {
     text-align: center;
-    padding: 60px;
-    background: rgba(255, 255, 255, 0.01);
-    backdrop-filter: blur(30px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 40px;
+    z-index: 10;
+    max-width: 600px;
 }
 
-/* --- Restante dos estilos de botões e textos --- */
-h1 { font-weight: 100; font-size: 5rem; letter-spacing: -4px; }
-h1 span { display: block; font-weight: 800; font-size: 1.5rem; letter-spacing: 12px; }
-.btn-gold { display: inline-block; padding: 22px 60px; background: #fff; color: #000; border-radius: 100px; font-weight: 900; text-decoration: none; }
+.branding {
+    font-size: 0.5rem;
+    letter-spacing: 6px;
+    opacity: 0.4;
+    margin-bottom: 30px;
+}
 
+h1 {
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 15px;
+    margin-bottom: 5px;
+    background: linear-gradient(180deg, #fff 0%, #333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line-sep {
+    height: 1px;
+    width: 40px;
+    background: #fff;
+    margin: 20px auto;
+    opacity: 0.2;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.expert-tag {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: 0.4s;
+}
+
+.btn-main:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-secondary {
+    display: block;
+    margin-top: 30px;
+    font-size: 0.6rem;
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover { color: #fff; }
