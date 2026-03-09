@@ -1,93 +1,56 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    height: 100vh;
     background-color: #000;
-    font-family: 'Inter', sans-serif;
     color: #fff;
-    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-/* Fundo de Código em Movimento */
-.code-bg {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+#matrix-canvas {
+    position: fixed;
+    top: 0; left: 0;
     z-index: 0;
-    pointer-events: none;
-}
-
-.scrolling-code {
-    position: absolute;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.7rem;
-    color: #fff;
-    white-space: nowrap;
-    animation: slideDown linear forwards;
-}
-
-@keyframes slideDown {
-    from { transform: translateY(-100vh); }
-    to { transform: translateY(100vh); }
 }
 
 .overlay-dark {
-    position: absolute;
-    width: 100%; height: 100%;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
     background: radial-gradient(circle, transparent 20%, #000 90%);
     z-index: 1;
 }
 
-/* Glassmorphism de Luxo */
 .luxury-wrapper {
     position: relative;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.01);
-    backdrop-filter: blur(40px);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
     padding: 60px;
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
 }
 
-/* Status do Terminal no Meio do Site */
-.dev-status {
-    font-family: 'Fira Code', monospace;
-    font-size: 0.65rem;
-    background: rgba(0,0,0,0.5);
-    padding: 15px;
-    border-radius: 10px;
-    margin: 30px 0;
-    text-align: left;
-    display: inline-block;
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.code-line span { color: #00ff88; margin-right: 10px; }
-
-h1 { font-weight: 100; font-size: 4.5rem; letter-spacing: -3px; }
-h1 span { display: block; font-weight: 800; font-size: 1.5rem; letter-spacing: 12px; color: rgba(255,255,255,0.2); }
+h1 { font-weight: 100; font-size: 4.5rem; letter-spacing: -3px; line-height: 0.9; }
+h1 span { display: block; font-weight: 800; font-size: 1.5rem; letter-spacing: 12px; opacity: 0.3; }
 
 .btn-gold {
     display: inline-block;
-    padding: 20px 50px;
+    padding: 20px 60px;
     background: #fff;
     color: #000;
     text-decoration: none;
     border-radius: 100px;
     font-weight: 900;
     letter-spacing: 3px;
-    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-top: 30px;
+    transition: 0.4s;
 }
 
-.btn-gold:hover {
-    transform: scale(1.1);
-    box-shadow: 0 20px 40px rgba(255,255,255,0.2);
-}
+.btn-gold:hover { transform: scale(1.1); box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3); }
 
-/* ... Estilo do Case Study (Mantenha o anterior) ... */
-.case-link { display: flex; align-items: center; justify-content: center; text-decoration: none; color: #fff; margin-top: 30px; font-size: 0.7rem; letter-spacing: 2px; }
-.case-link .line { width: 20px; height: 1px; background: #fff; margin-right: 10px; transition: 0.3s; }
-.case-link:hover .line { width: 40px; }
+.case-link { display: block; margin-top: 30px; text-decoration: none; color: #fff; opacity: 0.4; font-size: 0.7rem; }

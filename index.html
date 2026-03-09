@@ -6,13 +6,11 @@
     <title>ALVES | Infra & Design Studio</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Fontes e Animações -->
     <link href="https://unpkg.com" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
-    <!-- Camada de Código em Movimento -->
-    <div class="code-bg" id="code-bg"></div>
+    <!-- MOTOR DA CHUVA DE CÓDIGO -->
+    <canvas id="matrix-canvas"></canvas>
     <div class="overlay-dark"></div>
 
     <div class="luxury-wrapper" data-aos="zoom-out" data-aos-duration="2000">
@@ -22,50 +20,48 @@
             <h2>UI/UX Designer • Especialista em Infraestrutura</h2>
         </header>
 
-        <section class="dev-status">
-            <div class="code-line"><span>$</span> sudo systemctl status n8n_vigilancia</div>
-            <div class="code-line"><span>$</span> docker-compose up -d --build</div>
-        </section>
-
-        <div class="cta-luxury">
-            <!-- Link do WhatsApp configurado -->
+        <div class="cta-area">
+            <!-- SEU WHATSAPP REAL CONFIGURADO -->
             <a href="https://wa.me." class="btn-gold" target="_blank">INICIAR CONSULTORIA</a>
             
-            <div class="case-study-area">
-                <p class="view-label">PROJETOS EM DESTAQUE</p>
+            <div class="case-study">
                 <a href="https://clinicadrapatriciamartins.com.br" class="case-link" target="_blank">
                     <span class="line"></span>
-                    <span class="text">VISITAR CLÍNICA PATRÍCIA MARTINS</span>
-                    <span class="arrow">→</span>
+                    <span class="text">PROJETO: CLÍNICA PATRÍCIA MARTINS</span>
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- SCRIPT DA MATRIX (O QUE ESTAVA NA SUA FOTO, AGORA COMPLETO) -->
     <script src="https://unpkg.com"></script>
     <script>
         AOS.init();
-        
-        // Script para Gerar o Fundo de Código Dinâmico
-        const codeBg = document.getElementById('code-bg');
-        const commands = [
-            "npm run build", "docker ps -a", "ssh root@vps_alves", 
-            "git commit -m 'elite'", "ufw allow 443", "n8n start",
-            "certbot --nginx", "ls -la /var/www", "python3 main.py"
-        ];
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
 
-        function createCodeLine() {
-            const line = document.createElement('div');
-            line.className = 'scrolling-code';
-            line.innerText = commands[Math.floor(Math.random() * commands.length)];
-            line.style.left = Math.random() * 100 + "vw";
-            line.style.animationDuration = (Math.random() * 5 + 5) + "s";
-            line.style.opacity = Math.random() * 0.2;
-            codeBg.appendChild(line);
-            setTimeout(() => line.remove(), 10000);
+        const alphabet = "ALVESINFRA&DESIGN01sudo-systemctl-status-docker-compose-up-ssh-root@vps";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "rgba(255, 255, 255, 0.15)"; // Branco Elegante
+            ctx.font = fontSize + "px monospace";
+
+            drops.forEach((y, i) => {
+                const text = alphabet[Math.floor(Math.random() * alphabet.length)];
+                ctx.fillText(text, i * fontSize, y * fontSize);
+                if (y * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            });
         }
-        setInterval(createCodeLine, 300);
+        setInterval(drawMatrix, 50);
+        window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
     </script>
 </body>
 </html>
-
