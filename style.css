@@ -1,49 +1,42 @@
-.hero-banner {
-    width: 100%;
-    margin-bottom: 50px;
-    perspective: 1000px;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-.banner-glass {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    transform: rotateX(10deg);
-}
-
-.status-dot {
-    display: inline-block;
-    width: 8px; height: 8px;
-    background: #00ff88;
-    border-radius: 50%;
-    margin-right: 10px;
-    box-shadow: 0 0 10px #00ff88;
-}
-
-.banner-content h2 {
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    margin-top: 10px;
+body {
+    height: 100vh;
+    background-color: #030303;
     color: #fff;
-}
-
-.portfolio-mini-grid {
+    font-family: 'Inter', sans-serif;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.mini-card {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+#particles-js { position: absolute; width: 100%; height: 100%; z-index: 1; }
+
+.luxury-wrapper {
+    position: relative; z-index: 10;
+    text-align: center; width: 90%; max-width: 600px;
 }
+
+/* ESTILO DO SEU BANNER */
+.hero-banner { margin-bottom: 50px; perspective: 1000px; }
+.banner-glass {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px; border-radius: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.status-dot { width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88; display: inline-block; margin-right: 10px; }
+
+h1 { font-weight: 100; font-size: 4rem; letter-spacing: -3px; }
+h1 span { display: block; font-weight: 800; font-size: 1.2rem; letter-spacing: 10px; opacity: 0.3; }
+
+.btn-gold {
+    display: inline-block; padding: 18px 45px; background: #fff; color: #000;
+    text-decoration: none; font-weight: 900; border-radius: 50px; letter-spacing: 2px;
+    transition: 0.4s; margin-top: 30px;
+}
+.btn-gold:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(255,255,255,0.2); }
+
+.case-link { text-decoration: none; color: rgba(255,255,255,0.4); font-size: 0.7rem; display: block; margin-top: 20px; }

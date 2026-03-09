@@ -1,17 +1,63 @@
-<!-- Adicione este bloco no topo do seu <div class="luxury-wrapper"> -->
-<div class="hero-banner" data-aos="zoom-in" data-aos-duration="1500">
-    <div class="banner-glass">
-        <div class="banner-content">
-            <span class="status-dot"></span>
-            <p>PROJETOS ATIVOS: 04</p>
-            <h2>ALVES <span>DESIGN HUB</span></h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALVES | Studio de Infraestrutura & Design</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- CONEXÃO COM A ROUPA DO SITE -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FONTES E ANIMAÇÕES DE ELITE -->
+    <link href="https://unpkg.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="sphere"></div>
+
+    <div class="luxury-wrapper">
+        <!-- O BANNER DA SUA FOTO (AGORA INTEGRADO) -->
+        <div class="hero-banner" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="banner-glass">
+                <div class="banner-content">
+                    <span class="status-dot"></span>
+                    <p>PROJETOS ATIVOS: 04</p>
+                    <h2>ALVES <span>DESIGN HUB</span></h2>
+                </div>
+                <div class="portfolio-mini-grid">
+                    <div class="mini-card">UI/UX</div>
+                    <div class="mini-card">INFRA</div>
+                    <div class="mini-card">I.A.</div>
+                </div>
+            </div>
         </div>
-        <div class="portfolio-mini-grid">
-            <div class="mini-card">UI/UX</div>
-            <div class="mini-card">INFRA</div>
-            <div class="mini-card">I.A.</div>
+
+        <header data-aos="fade-up" data-aos-delay="500">
+            <h1>ALVES <span>INFRA & DESIGN</span></h1>
+            <p>UI/UX Designer • Especialista em Infraestrutura</p>
+        </header>
+
+        <div class="cta-luxury" data-aos="fade-up" data-aos-delay="800">
+            <a href="https://wa.me" class="btn-gold">SOLICITAR CONSULTORIA</a>
+            <div class="case-study-area">
+                <a href="https://clinicadrapatriciamartins.com.br" class="case-link" target="_blank">
+                    <span class="line"></span>
+                    <span class="text">VISITAR CASE: CLÍNICA PATRÍCIA MARTINS</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- SCRIPTS PARA AS ANIMAÇÕES FUNCIONAREM -->
+    <script src="https://unpkg.com"></script>
+    <script src="https://cdn.jsdelivr.net"></script>
+    <script>
+        AOS.init();
+        particlesJS("particles-js", {"particles":{"number":{"value":50},"color":{"value":"#ffffff"},"opacity":{"value":0.2},"size":{"value":2},"line_linked":{"enable":false},"move":{"speed":0.5}}});
+    </script>
+</body>
+</html>
 
