@@ -45,26 +45,47 @@
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
 
-        function drawMatrix() {
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "rgba(255, 255, 255, 0.25)"; // Letras brancas nítidas
-            ctx.font = fontSize + "px 'Fira Code', monospace";
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALVES | Infra & Design Studio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <div class="luxury-wrapper">
+        <header>
+            <p class="top-tag">EST. 2026 — PREMIER CONSULTANCY</p>
+            <h1>ALVES <span>INFRA & DESIGN</span></h1>
+            <h2>UI/UX Designer • Especialista em Infraestrutura</h2>
+        </header>
 
-            drops.forEach((y, i) => {
-                const text = alphabet[Math.floor(Math.random() * alphabet.length)];
-                ctx.fillText(text, i * fontSize, y * fontSize);
-                if (y * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-                drops[i]++;
-            });
-        }
-        setInterval(drawMatrix, 50);
-        window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
-    </script>
+        <section class="team-brand">
+            <p class="label">EQUIPE & TECNOLOGIA DE ELITE</p>
+            <div class="services-row">
+                <span>Design de Luxo</span>
+                <span class="sep">/</span>
+                <span>Engenharia de I.A.</span>
+                <span class="sep">/</span>
+                <span>Segurança VPS</span>
+            </div>
+        </section>
+
+        <div class="cta-luxury">
+            <div class="btn-static">INICIAR CONSULTORIA EXCLUSIVA</div>
+            
+            <div class="case-study-area">
+                <p class="view-label">PROJETOS EM DESTAQUE</p>
+                <a href="https://clinicadrapatriciamartins.com.br" class="case-link" target="_blank">
+                    <span class="line"></span>
+                    <span class="text">VISITAR CLÍNICA PATRÍCIA MARTINS</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-
-
-
-    
