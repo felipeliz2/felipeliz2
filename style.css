@@ -1,48 +1,32 @@
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, #2c1e14 0%, #000000 100%);
-    font-family: Arial, sans-serif;
-    color: #d4af37; /* Dourado do Logo */
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    transform: perspective(1000px) rotateX(5deg);
-    transition: 0.5s;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-}
-
-.card:hover {
-    transform: perspective(1000px) rotateX(0deg) scale(1.05);
-}
-
-.logo-site {
-    width: 100px;
+.subtitle {
+    font-size: 0.9rem;
+    color: #fff;
+    opacity: 0.8;
     margin-bottom: 20px;
 }
 
-.btn {
-    display: block;
-    margin: 10px auto;
-    padding: 12px 25px;
-    background: #d4af37;
-    color: #1a110a;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
+.proposta-box {
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-.btn:hover {
-    background: #fff;
-    transform: translateY(-3px);
+.proposta-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.price-tag {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
 }
