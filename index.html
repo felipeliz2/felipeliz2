@@ -6,10 +6,12 @@
     <title>ALVES | Infra & Design Studio</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <!-- Fontes e Animações de Luxo -->
     <link href="https://unpkg.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
-    <!-- MOTOR DA CHUVA DE CÓDIGO -->
+    <!-- MOTOR DA MATRIZ DE DADOS -->
     <canvas id="matrix-canvas"></canvas>
     <div class="overlay-dark"></div>
 
@@ -21,37 +23,36 @@
         </header>
 
         <div class="cta-area">
-            <!-- SEU WHATSAPP REAL CONFIGURADO -->
+            <!-- WHATSAPP CONFIGURADO: 41 9813-9600 -->
             <a href="https://wa.me." class="btn-gold" target="_blank">INICIAR CONSULTORIA</a>
             
             <div class="case-study">
-                <a href="https://clinicadrapatriciamartins.com.br" class="case-link" target="_blank">
-                    <span class="line"></span>
-                    <span class="text">PROJETO: CLÍNICA PATRÍCIA MARTINS</span>
-                </a>
+                <a href="https://clinicadrapatriciamartins.com.br" class="case-link" target="_blank">PROJETO: CLÍNICA PATRÍCIA MARTINS →</a>
             </div>
         </div>
     </div>
 
-    <!-- SCRIPT DA MATRIX (O QUE ESTAVA NA SUA FOTO, AGORA COMPLETO) -->
+    <!-- SCRIPTS DE MOVIMENTO E ANIMAÇÃO -->
     <script src="https://unpkg.com"></script>
     <script>
         AOS.init();
         const canvas = document.getElementById('matrix-canvas');
         const ctx = canvas.getContext('2d');
+
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        const alphabet = "ALVESINFRA&DESIGN01sudo-systemctl-status-docker-compose-up-ssh-root@vps";
+        // Comandos reais de programação para a chuva de dados
+        const alphabet = "ALVESINFRA&DESIGN01sudo-systemctl-status-docker-compose-up-ssh-root@vps-n8n-start-npm-run-build-git-commit-ufw-allow-443";
         const fontSize = 16;
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
 
         function drawMatrix() {
-            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // Efeito de rastro
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "rgba(255, 255, 255, 0.15)"; // Branco Elegante
-            ctx.font = fontSize + "px monospace";
+            ctx.fillStyle = "rgba(255, 255, 255, 0.25)"; // Letras brancas nítidas
+            ctx.font = fontSize + "px 'Fira Code', monospace";
 
             drops.forEach((y, i) => {
                 const text = alphabet[Math.floor(Math.random() * alphabet.length)];
@@ -65,3 +66,6 @@
     </script>
 </body>
 </html>
+
+
+    
