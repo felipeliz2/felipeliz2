@@ -26,4 +26,7 @@ Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura
 ## 📊 Estatísticas
 
 ![stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=tokyonight)
+
+
+
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=tokyonight)
