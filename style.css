@@ -11,11 +11,7 @@ body {
     align-items: center;
 }
 
-#matrix-canvas {
-    position: fixed;
-    top: 0; left: 0;
-    z-index: 1;
-}
+#matrix-canvas { position: fixed; top: 0; left: 0; z-index: 1; }
 
 .overlay-dark {
     position: fixed;
@@ -54,10 +50,7 @@ h2 { font-size: 0.7rem; opacity: 0.5; margin: 30px 0; letter-spacing: 2px; text-
 
 .btn-gold:hover { transform: scale(1.05); box-shadow: 0 10px 40px rgba(255,255,255,0.2); }
 
-/* ESTILO DO NOVO BOTÃO BEHANCE */
-.behance-box {
-    margin-top: 25px;
-}
+.behance-box { margin-top: 25px; }
 
 .btn-outline {
     display: inline-block;
@@ -72,9 +65,5 @@ h2 { font-size: 0.7rem; opacity: 0.5; margin: 30px 0; letter-spacing: 2px; text-
     transition: 0.3s;
 }
 
-.btn-outline:hover {
-    color: #fff;
-    border-color: #fff;
-    background: rgba(255, 255, 255, 0.05);
-}
+.btn-outline:hover { color: #fff; border-color: #fff; background: rgba(255, 255, 255, 0.05); }
 

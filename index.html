@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 <body>
+    <!-- MOTOR DE ÁUDIO (SOM DE AMBIENTE TECH) -->
+    <audio id="ambient-sound" loop src="https://codeskulptor-demos.commondatastorage.googleapis.com"></audio>
+
     <canvas id="matrix-canvas"></canvas>
     <div class="overlay-dark"></div>
 
@@ -19,10 +22,8 @@
         </header>
 
         <div class="cta-area">
-            <!-- BOTÃO PRINCIPAL -->
             <a href="https://wa.me." class="btn-gold" target="_blank">INICIAR CONSULTORIA</a>
             
-            <!-- NOVO BOTÃO BEHANCE (SEM O ROXO) -->
             <div class="behance-box">
                 <a href="https://www.behance.net" target="_blank" class="btn-outline">
                     VER PORTFÓLIO NO BEHANCE
@@ -32,6 +33,7 @@
     </div>
 
     <script>
+        // MOTOR DA MATRIX (CHUVA DE CÓDIGO)
         const canvas = document.getElementById('matrix-canvas');
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
@@ -56,8 +58,17 @@
             });
         }
         setInterval(drawMatrix, 50);
+
+        // MOTOR DO SOM (LIGA NO PRIMEIRO CLIQUE)
+        document.body.addEventListener('click', function() {
+            const audio = document.getElementById('ambient-sound');
+            if (audio) {
+                audio.volume = 0.15; // Volume sutil de luxo
+                audio.play();
+            }
+        }, { once: true });
+
         window.onresize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
     </script>
 </body>
 </html>
-
