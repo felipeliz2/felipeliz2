@@ -7,11 +7,39 @@
 </p>
 
 <p align="center">
-<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="800"/>
+<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="900"/>
 </p>
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Initializing+ALVES+STUDIO...;Cyber+Infrastructure+Loading...;Deploying+Secure+Systems...;UI%2FUX+Engineering+Ready..."/>
+</p>
+
+---
+
+# 🎮 Navegação
+
+<p align="center">
+
+<a href="#-tecnologias">
+<img src="https://img.shields.io/badge/🚀%20Tecnologias-0f2027?style=for-the-badge"/>
+</a>
+
+<a href="#-estatísticas">
+<img src="https://img.shields.io/badge/📊%20Estatísticas-203a43?style=for-the-badge"/>
+</a>
+
+<a href="#-atividade">
+<img src="https://img.shields.io/badge/📈%20Atividade-2c5364?style=for-the-badge"/>
+</a>
+
+<a href="#-cidade-de-commits">
+<img src="https://img.shields.io/badge/🧬%20Commits%203D-00ffee?style=for-the-badge"/>
+</a>
+
+<a href="#-contato">
+<img src="https://img.shields.io/badge/📞%20Contato-25D366?style=for-the-badge"/>
+</a>
+
 </p>
 
 ---
@@ -50,10 +78,10 @@ Especialista em **Infraestrutura Digital, Segurança e UI/UX**
 
 ---
 
-# 🧬 Contribuições 3D
+# 🧬 Cidade de Commits
 
 <p align="center">
-<img src="./profile-3d-contrib/profile-night-green.svg"/>
+<img src="./profile-3d-contrib/profile-night-rainbow.svg"/>
 </p>
 
 ---
