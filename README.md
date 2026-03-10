@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app" />
+  <img src="https://capsule-render.vercel.app" alt="Banner Alves Studio" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com" />
+  <img src="https://komarev.com" alt="Visitantes" />
 </p>
 
 <!-- MATRIX RAIN ANIMATION -->
 <p align="center">
-  <img src="https://media.giphy.com" width="900" />
+  <img src="https://media.giphy.com" width="900" alt="Matrix Rain" />
 </p>
 
 <!-- HACKER TERMINAL TYPING -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com" />
+  <img src="https://readme-typing-svg.demolab.com" alt="Terminal" />
 </p>
 
 ---
@@ -59,13 +59,6 @@
 # ⚡ STREAK
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com" />
-</p>
-
----
-
-# 🏆 TROFÉUS
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app" />
 </p>
 
 ---
