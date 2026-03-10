@@ -101,3 +101,8 @@ Especialista em **Infraestrutura Digital, Segurança e UI/UX**
 <p align="center">
 💻 Web Development • Infraestrutura • Segurança • UI/UX
 </p>
+## 🐍 Snake commits
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/felipeliz2/felipeliz2/output/github-contribution-grid-snake.svg">
+</p>
