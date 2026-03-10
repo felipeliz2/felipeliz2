@@ -1,8 +1,20 @@
 # 🚀 Felipe Alves
 # 🚀 Felipe Alves
 
-<img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=30&center=true&vCenter=true&width=600&lines=Olá,+eu+sou+Felipe+Alves;Desenvolvedor+Web;Criando+Sites+Profissionais;Bem-vindo+ao+meu+GitHub!" />
+![snake](https://raw.githubusercontent.com/felipeliz2/felipeliz2/output/github-contribution-grid-snake.svg)
+[![Felipe github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=felipeliz2&theme=react-dark)](https://github.com/felipeliz2)
+<img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=35&center=true&vCenter=true&width=900&lines=Felipe+Alves;Web+Developer;Building+Digital+Infrastructure;Welcome+to+my+GitHub" />
+## 🚀 Tecnologias
 
+![HTML](https://img.shields.io/badge/HTML-000?style=for-the-badge&logo=html5)
+![CSS](https://img.shields.io/badge/CSS-000?style=for-the-badge&logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
+
+---
+
+## 📊 Estatísticas
+
+![stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=tokyonight)
 Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura.
 
 ## 🛠 Tecnologias
