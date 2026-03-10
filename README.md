@@ -15,8 +15,14 @@ Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura
 - Landing pages
 - Infraestrutura web
 
-## 📩 Contato
-Instagram: https://instagram.com/clinicadra.patriciamartins
+## 🚀 Tecnologias
 
-</p>
-[![Felipe github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=felipeliz2&theme=react-dark)](https://github.com/felipeliz2)
+![HTML](https://img.shields.io/badge/HTML-000?style=for-the-badge&logo=html5)
+![CSS](https://img.shields.io/badge/CSS-000?style=for-the-badge&logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
+
+---
+
+## 📊 Estatísticas
+
+![stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=tokyonight)
