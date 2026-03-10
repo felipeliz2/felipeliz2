@@ -9,21 +9,26 @@
 ### 🛡️ Especialista em Blindagem Digital & UI/UX
 > **"Transformando infraestrutura bruta em fortalezas digitais de alto padrão."**
 
-[![Status](https://img.shields.io)](https://wa.me)
-[![Segurança](https://img.shields.io)](https://wa.me)
+<p align="left">
+  <img src="https://img.shields.io" />
+  <img src="https://img.shields.io" />
+</p>
 
 ---
 
 ### 🚀 Poder de Entrega (Tech Stack)
-![Skills](https://skillicons.dev)
+<p align="left">
+  <img src="https://skillicons.dev" />
+</p>
 
 ---
 
 ### 📊 Estatísticas de Elite (Real-time)
-<p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app" />
-  <img height="170em" src="https://github-readme-stats.vercel.app" />
-</p>
+
+
+| **Atividade no GitHub** | **Linguagens de Domínio** |
+| :---: | :---: |
+| <img height="180em" src="https://github-readme-stats.vercel.app" /> | <img height="180em" src="https://github-readme-stats.vercel.app" /> |
 
 ---
 
