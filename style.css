@@ -1,59 +1,60 @@
+/* RESET DE MESTRE */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #080808;
+    background-color: #000;
     font-family: 'Inter', sans-serif;
     color: #fff;
+    overflow: hidden; /* Trava a rolagem */
+    display: flex;
+    justify-content: center; /* Centraliza horizontal */
+    align-items: center; /* Centraliza vertical */
 }
 
+/* O MOTOR DA MATRIX NO FUNDO */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay-dark {
+    position: fixed;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle, transparent 20%, #000 90%);
+    z-index: 2;
+}
+
+/* O CARD DE LUXO CENTRALIZADO */
 .luxury-wrapper {
+    position: relative;
+    z-index: 10;
     text-align: center;
-    max-width: 600px;
-    width: 90%;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px); /* Efeito de Vidro */
     padding: 60px;
-    background: #000;
     border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    max-width: 90%;
 }
 
-.top-tag { font-size: 0.6rem; letter-spacing: 5px; opacity: 0.4; margin-bottom: 25px; }
+h1 { font-weight: 100; font-size: 4rem; letter-spacing: -2px; line-height: 0.9; }
+h1 span { display: block; font-weight: 800; font-size: 1.2rem; letter-spacing: 10px; color: rgba(255,255,255,0.3); margin-top: 10px; }
 
-h1 { font-weight: 100; font-size: 4.5rem; letter-spacing: -3px; line-height: 0.9; }
-h1 span { display: block; font-weight: 800; font-size: 1.5rem; letter-spacing: 12px; margin-top: 10px; }
+h2 { font-size: 0.8rem; opacity: 0.5; margin: 30px 0; letter-spacing: 2px; text-transform: uppercase; }
 
-h2 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: 1.1rem; opacity: 0.5; margin-top: 25px; }
-
-.team-brand { margin: 50px 0; padding: 25px 0; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
-.label { font-size: 0.5rem; letter-spacing: 4px; opacity: 0.3; margin-bottom: 15px; }
-.services-row { font-size: 0.7rem; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; opacity: 0.7; }
-.sep { margin: 0 10px; opacity: 0.2; }
-
-.btn-static {
+.btn-gold {
     display: inline-block;
-    padding: 22px 60px;
+    padding: 18px 45px;
     background: #fff;
     color: #000;
-    font-size: 0.7rem;
-    font-weight: 900;
-    letter-spacing: 4px;
-    border-radius: 100px;
-    margin-bottom: 40px;
-}
-
-.case-link {
     text-decoration: none;
-    color: #fff;
-    font-size: 0.7rem;
+    border-radius: 100px;
+    font-weight: 900;
     letter-spacing: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.5;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
-.case-link:hover { opacity: 1; }
-.case-link .line { width: 30px; height: 1px; background: #fff; margin-right: 10px; }
+.btn-gold:hover { transform: scale(1.1); box-shadow: 0 10px 40px rgba(255,255,255,0.2); }
