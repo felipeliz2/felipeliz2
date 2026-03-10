@@ -1,45 +1,23 @@
-# Olá, eu sou o Felipe Alves 👋
+# 🚀 Felipe Alves
 
-**Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura.**
+Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura.
 
----
+## 🛠 Tecnologias
+- HTML
+- CSS
+- JavaScript
+- WordPress
+- Docker
+- VPS
 
-### 📊 Estatísticas do GitHub
+## 🌐 Projetos
+- Sites institucionais
+- Landing pages
+- Infraestrutura web
 
-<p align="left">
-  <!-- SUBSTITUA 'SEU_USUARIO_AQUI' PELO SEU USER DO GITHUB -->
-  <img height="180em" src="https://github-readme-stats.vercel.app" />
-  <img height="180em" src="https://github-readme-stats.vercel.app" />
+## 📩 Contato
+Instagram: https://instagram.com/clinicadra.patriciamartins
 </p>
-
----
-
-### 🛠 Tecnologias e Ferramentas
-
-<p align="left">
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-</p>
-
----
-
-### 📁 O que eu faço?
-
-*   **Sites Institucionais:** Desenvolvimento de presença digital sólida para empresas.
-*   **Landing Pages:** Páginas de alta conversão focadas em resultados.
-*   **Infraestrutura Web:** Configuração de servidores VPS e ambientes seguros.
-
----
-
-### ✉️ Vamos conversar?
-
-<p align="left">
-<a href="https://www.instagram.com" target="_blank">
-  <img src="https://img.shields.io" />
-</a>
-</p>
-
+<img src="https://readme-typing-svg.herokuapp.com/?color=00F7FF&size=30&center=true&vCenter=true&width=600&lines=Olá,+eu+sou+Felipe+Alves;Desenvolvedor+Web;Criando+Sites+Profissionais;Bem-vindo+ao+meu+GitHub!" />
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=felipeliz2&layout=compact&theme=dark)
