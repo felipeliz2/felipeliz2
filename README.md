@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app" alt="Banner Alves Studio" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:000000,100:00ff00&text=ALVES%20STUDIO&fontColor=00ff00&fontSize=50&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com" alt="Visitantes" />
+  <img src="https://komarev.com/ghpvc/?username=felipeliz2&label=VISITANTES&color=00ff00&style=for-the-badge" />
 </p>
 
 <!-- MATRIX RAIN ANIMATION -->
 <p align="center">
-  <img src="https://media.giphy.com" width="900" alt="Matrix Rain" />
+  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="900" />
 </p>
 
 <!-- HACKER TERMINAL TYPING -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com" alt="Terminal" />
+  <img src="https://readme-typing-svg.demolab.com" />
 </p>
 
 ---
@@ -21,10 +21,10 @@
 # 🎮 MENU
 
 <p align="center">
-  <a href="#tecnologias"><img src="https://img.shields.io🚀%20Tecnologias-000000?style=for-the-badge&logo=linux&logoColor=00ff00" /></a>
-  <a href="#estatisticas"><img src="https://img.shields.io📊%20Estatísticas-000000?style=for-the-badge" /></a>
-  <a href="#atividade"><img src="https://img.shields.io📈%20Atividade-000000?style=for-the-badge" /></a>
-  <a href="https://wa.me"><img src="https://img.shields.io📞%20Contato-25D366?style=for-the-badge&logo=whatsapp" /></a>
+  <a href="#tecnologias"><img src="https://img.shields.io/badge/🚀%20Tecnologias-000000?style=for-the-badge&logo=linux&logoColor=00ff00" /></a>
+  <a href="#estatisticas"><img src="https://img.shields.io/badge/📊%20Estatísticas-000000?style=for-the-badge" /></a>
+  <a href="#atividade"><img src="https://img.shields.io/badge/📈%20Atividade-000000?style=for-the-badge" /></a>
+  <a href="https://wa.me/5541998139600"><img src="https://img.shields.io/badge/📞%20Contato-25D366?style=for-the-badge&logo=whatsapp" /></a>
 </p>
 
 ---
@@ -56,6 +56,20 @@
 
 ---
 
+# 🐍 SNAKE COMMITS
+<p align="center">
+  <img src="https://raw.githubusercontent.com/felipeliz2/felipeliz2/output/github-snake.svg" />
+</p>
+
+---
+
+# 🏆 TROFÉUS
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=felipeliz2&theme=matrix&no-frame=true&row=1&column=6" />
+</p>
+
+---
+
 # ⚡ STREAK
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com" />
@@ -65,8 +79,8 @@
 
 # 📞 CONTATO
 <p align="center">
-  <a href="https://wa.me">
-    <img src="https://img.shields.ioWhatsApp-(41)_99813--9600-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  <a href="https://wa.me/5541998139600">
+    <img src="https://img.shields.io" />
   </a>
 </p>
 
