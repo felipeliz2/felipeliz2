@@ -7,7 +7,7 @@
 ### 📊 Estatísticas do GitHub
 
 <p align="left">
-  <!-- IMPORTANTE: No lugar de SEU_USUARIO, coloque seu nome de usuário exato do GitHub -->
+  <!-- SUBSTITUA 'SEU_USUARIO_AQUI' PELO SEU USER DO GITHUB -->
   <img height="180em" src="https://github-readme-stats.vercel.app" />
   <img height="180em" src="https://github-readme-stats.vercel.app" />
 </p>
@@ -17,12 +17,12 @@
 ### 🛠 Tecnologias e Ferramentas
 
 <p align="left">
-  <img src="https://img.shields.io" alt="HTML5" />
-  <img src="https://img.shields.io" alt="CSS3" />
-  <img src="https://img.shields.io" alt="JavaScript" />
-  <img src="https://img.shields.io" alt="WordPress" />
-  <img src="https://img.shields.io" alt="Docker" />
-  <img src="https://img.shields.io" alt="Linux" />
+  <img src="https://img.shields.io" />
+  <img src="https://img.shields.io" />
+  <img src="https://img.shields.io" />
+  <img src="https://img.shields.io" />
+  <img src="https://img.shields.io" />
+  <img src="https://img.shields.io" />
 </p>
 
 ---
@@ -39,9 +39,7 @@
 
 <p align="left">
 <a href="https://www.instagram.com" target="_blank">
-  <img src="https://img.shields.io" alt="Instagram" />
+  <img src="https://img.shields.io" />
 </a>
 </p>
 
-
----
