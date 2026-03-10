@@ -1,4 +1,3 @@
-/* RESET DE MESTRE */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -6,17 +5,15 @@ body {
     background-color: #000;
     font-family: 'Inter', sans-serif;
     color: #fff;
-    overflow: hidden; /* Trava a rolagem */
+    overflow: hidden;
     display: flex;
-    justify-content: center; /* Centraliza horizontal */
-    align-items: center; /* Centraliza vertical */
+    justify-content: center;
+    align-items: center;
 }
 
-/* O MOTOR DA MATRIX NO FUNDO */
 #matrix-canvas {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0; left: 0;
     z-index: 1;
 }
 
@@ -27,27 +24,25 @@ body {
     z-index: 2;
 }
 
-/* O CARD DE LUXO CENTRALIZADO */
 .luxury-wrapper {
     position: relative;
     z-index: 10;
     text-align: center;
     background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(20px); /* Efeito de Vidro */
+    backdrop-filter: blur(20px);
     padding: 60px;
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    max-width: 90%;
 }
 
 h1 { font-weight: 100; font-size: 4rem; letter-spacing: -2px; line-height: 0.9; }
 h1 span { display: block; font-weight: 800; font-size: 1.2rem; letter-spacing: 10px; color: rgba(255,255,255,0.3); margin-top: 10px; }
 
-h2 { font-size: 0.8rem; opacity: 0.5; margin: 30px 0; letter-spacing: 2px; text-transform: uppercase; }
+h2 { font-size: 0.7rem; opacity: 0.5; margin: 30px 0; letter-spacing: 2px; text-transform: uppercase; }
 
 .btn-gold {
     display: inline-block;
-    padding: 18px 45px;
+    padding: 18px 50px;
     background: #fff;
     color: #000;
     text-decoration: none;
@@ -57,4 +52,29 @@ h2 { font-size: 0.8rem; opacity: 0.5; margin: 30px 0; letter-spacing: 2px; text-
     transition: 0.4s;
 }
 
-.btn-gold:hover { transform: scale(1.1); box-shadow: 0 10px 40px rgba(255,255,255,0.2); }
+.btn-gold:hover { transform: scale(1.05); box-shadow: 0 10px 40px rgba(255,255,255,0.2); }
+
+/* ESTILO DO NOVO BOTÃO BEHANCE */
+.behance-box {
+    margin-top: 25px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+

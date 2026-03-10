@@ -19,8 +19,15 @@
         </header>
 
         <div class="cta-area">
-            <a href="https://wa.me" class="btn-gold" target="_blank">SOLICITAR ORÇAMENTO</a>
-            <p class="behance-link">VEJA MEU PORTFÓLIO: <a href="https://www.behance.net" target="_blank">BEHANCE.NET/STUDIOALVES</a></p>
+            <!-- BOTÃO PRINCIPAL -->
+            <a href="https://wa.me." class="btn-gold" target="_blank">INICIAR CONSULTORIA</a>
+            
+            <!-- NOVO BOTÃO BEHANCE (SEM O ROXO) -->
+            <div class="behance-box">
+                <a href="https://www.behance.net" target="_blank" class="btn-outline">
+                    VER PORTFÓLIO NO BEHANCE
+                </a>
+            </div>
         </div>
     </div>
 
@@ -29,15 +36,18 @@
         const ctx = canvas.getContext('2d');
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+
         const alphabet = "ALVESSTUDIO01sudo-systemctl-status-docker-compose-up-ssh-root@vps-n8n-start";
         const fontSize = 16;
         const columns = canvas.width / fontSize;
         const drops = Array(Math.floor(columns)).fill(1);
+
         function drawMatrix() {
             ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = "rgba(255, 255, 255, 0.15)";
             ctx.font = fontSize + "px monospace";
+
             drops.forEach((y, i) => {
                 const text = alphabet[Math.floor(Math.random() * alphabet.length)];
                 ctx.fillText(text, i * fontSize, y * fontSize);
@@ -50,3 +60,4 @@
     </script>
 </body>
 </html>
+
