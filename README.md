@@ -1,5 +1,10 @@
-# 🚀 Felipe Alves
-# 🚀 Felipe Alves
+ 🚀 Felipe Alves
+
+Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura.
+
+---
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=tokyonight)
 
 ![snake](https://raw.githubusercontent.com/felipeliz2/felipeliz2/output/github-contribution-grid-snake.svg)
 [![Felipe github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=felipeliz2&theme=react-dark)](https://github.com/felipeliz2)
@@ -12,14 +17,7 @@
 
 ---
 
-# 🚀 Felipe Alves
-
-Desenvolvedor Web focado em criar sites modernos e infraestrutura digital segura.
-
----
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=felipeliz2&show_icons=true&theme=tokyonight)
-
+#
 
 ## 🛠 Tecnologias
 - HTML
