@@ -33,11 +33,9 @@ Desenvolvedor Web focado em criar **sites modernos, rápidos e infraestrutura di
 [![Felipe activity graph](https://github-readme-activity-graph.vercel.app/graph?username=felipeliz2&theme=react-dark)](https://github.com/felipeliz2)
 
 ---
-
-## 🐍 Snake comendo commits
+## 🐍 Contribuições
 
 ![snake gif](https://raw.githubusercontent.com/felipeliz2/felipeliz2/output/github-contribution-grid-snake.svg)
-
 ---
 
 ## 👀 Visitantes
