@@ -9,17 +9,13 @@
 ### 🛡️ Especialista em Blindagem Digital & UI/UX
 > **"Transformando infraestrutura bruta em fortalezas digitais de alto padrão."**
 
-<p align="left">
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-</p>
+[![Status](https://img.shields.io)](https://wa.me)
+[![Segurança](https://img.shields.io)](https://wa.me)
 
 ---
 
 ### 🚀 Poder de Entrega (Tech Stack)
-<p align="left">
-  <img src="https://skillicons.dev" />
-</p>
+![Skills](https://skillicons.dev)
 
 ---
 
