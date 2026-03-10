@@ -6,10 +6,10 @@
 
 ---
 
-### <img src="https://raw.githubusercontent.com" width="25" /> Especialista em Blindagem Digital & UI/UX
+### 🛡️ Especialista em Blindagem Digital & UI/UX
 > **"Transformando infraestrutura bruta em fortalezas digitais de alto padrão."**
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io" />
   <img src="https://img.shields.io" />
 </p>
@@ -18,17 +18,15 @@
 
 ### 🚀 Poder de Entrega (Tech Stack)
 <p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev" />
-  </a>
+  <img src="https://skillicons.dev" />
 </p>
 
 ---
 
 ### 📊 Estatísticas de Elite (Real-time)
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app" />
-  <img height="180em" src="https://github-readme-stats.vercel.app" />
+  <img height="170em" src="https://github-readme-stats.vercel.app" />
+  <img height="170em" src="https://github-readme-stats.vercel.app" />
 </p>
 
 ---
